@@ -1,0 +1,42 @@
+<head>
+</head>
+<body>
+<script>
+function myFunction()
+{
+  let gramperliter = 1;
+  var weight = document.getElementById("name").value;
+  let litrerequired = weight * 1000 / gramperliter;
+  let litreinoneballoon = 14.137;
+  let noofballoons = Math.ceil(litrerequired / litreinoneballoon);
+  document.getElementById("balloons").value = noofballoons;
+  let diameter = 2 * Math.cbrt(litrerequired * 1000/Math.PI/4 *3);
+  let diameterresult = diameter.toFixed(1);
+  document.getElementById("diameter").value = diameterresult;
+}
+</script>
+<p><span style='font-size:20.0pt;line-height:107%'>How Many Regular Helium Balloons Would It Take to Lift Someone?</span></p>
+<p><span>
+<img scr="balloons.avif"></p>
+<p><span style='font-size:16.0pt;line-height:107%'>Helium has a lifting force of <b>1 (1.05) gram per litre</b>. Hydrogen has a force of <b>1.13 gram per litre</b>.</span></p>
+<p><span style='font-size:16.0pt;line-height:107%'>A normal balloon at an amusement park might be 30 centimetres (about 1 foot) in diameter.<o:p></o:p></span></p>
+<p><span style='font-size:16.0pt;line-height:107%'>Volume is calculated as <sup>4</sup>/<sub>3</sub>pi*r<sup>3</sup>.</span></p>
+<label style='font-size:16.0pt;line-height:107%' for="name">Enter your weight (kg):</label>
+  <input type="number" id="name" value=0><br><br>
+<label style='font-size:16.0pt;line-height:107%' for="balloons">No of 1ft diameter Balloons:</label>
+  <input type="number" id="balloons" readonly value=0><br><br>
+<label style='font-size:16.0pt;line-height:107%' for="balloons">Diameter If Single Balloon (cm):</label>
+  <input type="number" id="diameter" readonly value=0><br><br>
+<p><button type="button" onclick="myFunction()">Try it</button></p>
+<p></p>
+<p></p>
+<a href="https://www.hackster.io/news/introducing-the-blimpduino-2-d551f4270084">Some Drone AirShip Kit</a></p>
+<a href="https://www.startnext.com/en/silent-runner">Some CrowdFunded Project for Drone AirShip</a></P>
+<a href="https://www.irjet.net/archives/V3/i7/IRJET-V3I7205.pdf">Another Bluethooth Control AirShip</a></p>
+
+<p><span style='font-size:20.0pt;line-height:107%'>Ascend rate is more complicated</span></p>
+<p><a href="https://physics.stackexchange.com/questions/11404/ascent-rate-and-size-of-balloon">Ascend Rate and Size of balloon</a></p>
+<p><a href="https://amt.copernicus.org/articles/4/2235/2011/amt-4-2235-2011.pdf">Ascend Rate Modelling</a></p>
+</body>
+
+</html>
